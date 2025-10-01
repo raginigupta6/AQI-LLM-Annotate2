@@ -1,4 +1,51 @@
 ````markdown
+
+
+---
+
+## Data
+
+- **Raw traces**
+
+  - `sample_raw_trace.csv`, `query_output.csv` → demo outputs from Waggle queries  
+  - Full 30s raw traces are too large; re-download from the [Waggle repository](https://github.com/waggle-sensor/waggle/blob/master/data/README.md)  
+
+- **Metadata**
+
+  - `nodes.csv` → node IDs, locations  
+  - `sensors.csv` → sensor types and parameters  
+  - `provenance.csv` → provenance records  
+
+- **Aggregated data**
+
+  - `aot_aggregated_10min.csv`  
+  - `aot_aggregated_1hour.csv`  
+  - `sample_aggregated_[10min|30min|1hour].csv`  
+  - `pseudo_labels_dbscan_kmeans_1hour.csv`  
+
+The complete AoT dataset can also be accessed here: [Array of Things](https://arrayofthings.github.io/index.html).
+
+---
+
+## Notebooks
+
+1. **01_data_description.ipynb** → overview of nodes, sensors, metadata  
+2. **02_query_waggle.ipynb** → querying raw traces from Waggle  
+3. **03_aggregation.ipynb** → aggregation at 10min / 30min / 1hr  
+4. **04_visualizations.ipynb** → visualizations (with final paper plots imported)  
+5. **05_clustering_labeling.ipynb** → clustering sensor nodes & pseudo-label generation  
+6. **06_modeling_evaluation.ipynb** → example ML evaluation with annotated data  
+
+---
+
+## Installation
+
+Clone the repo and install requirements:
+
+```bash
+git clone <your-repo-link>
+cd <your-repo>
+pip install -r requirements.txt
 # Aggregation Scripts
 
 This folder contains scripts for aggregating Array of Things (AoT) sensor data into different temporal resolutions.  
