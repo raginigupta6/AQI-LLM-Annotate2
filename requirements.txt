@@ -1,0 +1,25 @@
+# Core scientific stack
+numpy
+pandas
+scipy
+
+# Visualization
+matplotlib
+seaborn
+
+# Machine learning
+scikit-learn
+
+# Notebook and utilities
+jupyter
+notebook
+ipykernel
+
+# For working with time-series data
+statsmodels
+
+# For running subprocess calls and scripts
+tqdm
+
+# Optional but useful for consistency
+python-dateutil
